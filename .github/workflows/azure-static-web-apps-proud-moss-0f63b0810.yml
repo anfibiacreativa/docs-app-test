@@ -36,7 +36,7 @@ jobs:
           app_build_command: "echo 'empty'"
           ###### End of Repository/Build Configurations ######
         env: 
-          PRE_BUILD_COMMAND: './scripts/setup-pupeteer.sh'    
+          PRE_BUILD_COMMAND: './scripts/setup-puppeteer.sh'    
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
